@@ -28,8 +28,7 @@ public class EmailValidation {
 			validationCount++;
 		}
 		
-		String isValid = validationCount == 4 ? "true" : "false";
-		System.out.println("\nIs valid email : " + isValid);
+		System.out.println("\nIs valid email : " + (validationCount == 4));
 	}
 	
 	public static Boolean symbolValidation(String symbol, String inEmail) {
