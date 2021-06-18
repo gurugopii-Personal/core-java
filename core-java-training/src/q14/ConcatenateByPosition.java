@@ -1,5 +1,7 @@
 package q14;
 
+import java.math.BigInteger;
+
 public class ConcatenateByPosition {
 
 	public static void main(String[] args) {
@@ -17,6 +19,24 @@ public class ConcatenateByPosition {
 		}
 		System.out.println("Concatenated characters at given position: " + position);
 		System.out.println(concateString);
+		
 	}
-
+	
+	void login(String userId) {
+		//Login with UserID
+		login(userId, null);
+	}
+	
+	void login(BigInteger registeredMobileNumber) {
+		//Login with Registered mObile Number
+		login(null, registeredMobileNumber);
+	}
+	
+	void login(String id, BigInteger mobileNumber) {
+		if(id != null) {
+			//Login process with UserID
+		} else {
+			//Login process with Registered mObile Number
+		}
+	}
 }
